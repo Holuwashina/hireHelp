@@ -3,7 +3,7 @@ import { createTheme } from '@mui/material/styles';
 const theme = createTheme({
   typography: {
     fontFamily: [
-     'Inter',
+      'Inter',
       'Inter-var',
       'ui-sans-serif',
       'system-ui',
@@ -19,6 +19,7 @@ const theme = createTheme({
       'Segoe UI Emoji',
       'Segoe UI Symbol',
       'Noto Color Emoji',
+      'BankGothic Md BT',
     ].join(','),
   },
 });

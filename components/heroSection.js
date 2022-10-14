@@ -7,8 +7,8 @@ const Hero = () => {
     <Box sx={{ pt: 6, pb: 5, textAlign: '-webkit-center' }}>
       <Typography
         textAlign='center'
-        component='h6'
-        variant='h6'
+        component='h5'
+        variant='h5'
         sx={{
           maxWidth: 300,
           textTransform: 'uppercase',

@@ -9,13 +9,13 @@ const Categories = () => {
         Explore by Categories
       </Typography>
       <Stack direction='row' justifyContent='center' spacing={2}>
-        <Box sx={{ maxWidth: 120, p: 1, textAlign: 'center' }}>
+        <Box sx={{ maxWidth: 150, p: 1, textAlign: 'center' }}>
           <Image width={50} height={50} src='/video-camera.gif' />
           <Typography noWrap component='p' variant='body2' textAlign='center'>
             Video & Photography
           </Typography>
         </Box>
-        <Box sx={{ maxWidth: 120, p: 1, textAlign: 'center' }}>
+        <Box sx={{ maxWidth: 150, p: 1, textAlign: 'center' }}>
           <Image width={50} height={50} src='/video-player.gif' />
           <Typography component='p' variant='body2' textAlign='center'>
             Gadgets Repair
