@@ -1,4 +1,4 @@
-import { Box, Container } from '@mui/system';
+import {  Container } from '@mui/system';
 import React from 'react';
 import Categories from '../components/categories';
 import Hero from '../components/heroSection';
