@@ -2,7 +2,7 @@ import { Stack, Typography } from '@mui/material';
 
 const Sponsor = () => {
   return (
-    <Stack direction='row' spacing={2} justifyContent='center' sx={{opacity:'0.6'}}>
+    <Stack direction='row' spacing={2} justifyContent='center' sx={{opacity:0.5}}>
       <Typography
         variant='h6'
         component='h6'

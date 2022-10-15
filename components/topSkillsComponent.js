@@ -52,7 +52,7 @@ const responsive = {
   mobile: {
     breakpoint: { max: 464, min: 0 },
     items: 1,
-    partialVisibilityGutter: 30,
+    partialVisibilityGutter: 40,
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
@@ -72,7 +72,6 @@ const TopSkills = () => {
         partialVisible={true}
         focusOnSelect={true}
         arrows={false}
-        transitionDuration={0}
       >
         <Card sx={{ m: 1 }}>
           <CardMedia
