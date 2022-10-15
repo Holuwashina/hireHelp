@@ -1,79 +1,48 @@
-import {  Typography } from '@mui/material';
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
-
-const responsive = {
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-    slidesToSlide: 1,
-  },
-};
+import { Stack, Typography } from '@mui/material';
 
 const Sponsor = () => {
   return (
-      <Carousel
-        autoPlaySpeed={10000}
-        responsive={responsive}
-        centerMode={true}
-        focusOnSelect={true}
-        autoPlay={true}
-        arrows={false}
-        infinite={true}
+    <Stack direction='row' spacing={2} justifyContent='center'>
+      <Typography
+        variant='h6'
+        component='h6'
+        textAlign='center'
+        color='text.secondary'
+        sx={{
+          fontWeight: 800,
+          fontSize: '0.9rem',
+          letterSpacing: '.2rem',
+        }}
       >
-        <Typography
-          variant='h5'
-          textAlign='center'
-          // noWrap
-          sx={{
-            color: 'gray',
-            fontWeight: 500,
-            letterSpacing: '.2rem',
-            fontFamily: 'BankGothic Md BT',
-          }}
-        >
-          INFINIX
-        </Typography>
-        <Typography
-          variant='h5'
-          textAlign='center'
-          noWrap
-          sx={{
-            color: 'gray',
-            fontWeight: 500,
-            letterSpacing: '.2rem',
-            fontFamily: 'BankGothic Md BT',
-          }}
-        >
-          PEPSI
-        </Typography>
-        <Typography
-          variant='h5'
-          textAlign='center'
-          noWrap
-          sx={{
-            color: 'gray',
-            fontWeight: 500,
-            letterSpacing: '.2rem',
-            fontFamily: 'BankGothic Md BT',
-          }}
-        >
-          AIRTEL
-        </Typography>
-        <Typography
-          variant='h5'
-          textAlign='center'
-          noWrap
-          sx={{
-            color: 'gray',
-            fontWeight: 500,
-            letterSpacing: '.2rem',
-            fontFamily: 'BankGothic Md BT',
-          }}
-        >
-          TECNO
-        </Typography>
-      </Carousel>
+        INFINIX
+      </Typography>
+      <Typography
+        variant='h6'
+        component='h6'
+        textAlign='center'
+        sx={{
+          color: 'gray',
+          fontWeight: 800,
+          fontSize: '0.9rem',
+          letterSpacing: '.2rem',
+        }}
+      >
+        PEPSI
+      </Typography>
+      <Typography
+        variant='h6'
+        component='h6'
+        textAlign='center'
+        sx={{
+          color: 'gray',
+          fontWeight: 800,
+          fontSize: '0.9rem',
+          letterSpacing: '.2rem',
+        }}
+      >
+        AIRTEL
+      </Typography>
+    </Stack>
   );
 };
 

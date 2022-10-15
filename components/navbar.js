@@ -9,6 +9,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
+import Image from 'next/image';
 
 const pages = ['Products', 'Pricing', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -36,7 +37,7 @@ const NavBar = () => {
     <AppBar position='static' color='transparent'>
       <Container maxWidth='xl'>
         <Toolbar disableGutters>
-          <Typography
+          {/* <Typography
             variant='h6'
             noWrap
             component='a'
@@ -52,7 +53,7 @@ const NavBar = () => {
             }}
           >
             HIRE<span sx={{ color: 'red' }}>HELP</span>
-          </Typography>
+          </Typography> */}
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
@@ -92,7 +93,11 @@ const NavBar = () => {
               ))}
             </Menu>
           </Box>
-          <Typography
+          <Box sx={{flexGrow:1,display:'flex'}} >
+            <Image width={130} height={40} src='/Black11.gif' />
+          </Box>
+
+          {/* <Typography
             variant='h5'
             noWrap
             component='a'
@@ -120,7 +125,7 @@ const NavBar = () => {
             >
               HELP
             </Typography>
-          </Typography>
+          </Typography> */}
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
@@ -134,7 +139,7 @@ const NavBar = () => {
           </Box>
 
           {/* User not logged-in >>> Show this */}
-          <Button variant='contained' size='small'>
+          <Button size='small'>
             Join
           </Button>
 

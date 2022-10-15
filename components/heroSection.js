@@ -4,14 +4,14 @@ import Search from './searchComponent';
 
 const Hero = () => {
   return (
-    <Box sx={{ pt: 6, pb: 5, textAlign: '-webkit-center' }}>
+    <Box sx={{ py: 5, textAlign: '-webkit-center' }}>
       <Typography
+        gutterBottom
         textAlign='center'
         component='h5'
         variant='h5'
         sx={{
           maxWidth: 300,
-          textTransform: 'uppercase',
           fontWeight: 800,
           color: 'inherit',
         }}
@@ -19,7 +19,7 @@ const Hero = () => {
         Find the perfect freelance service near you.
       </Typography>
       <Search />
-      <Button size='small' variant='outlined'>
+      <Button fullWidth size='small' variant='outlined'>
         Search
       </Button>
     </Box>

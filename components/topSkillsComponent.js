@@ -11,11 +11,11 @@ import {
   Badge,
   Rating,
   IconButton,
+  Divider,
 } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import styles from '../assets/topSkillsComponent.module.css';
 import ShareIcon from '@mui/icons-material/Share';
 import MyLocationIcon from '@mui/icons-material/MyLocation';
 
@@ -52,7 +52,7 @@ const responsive = {
   mobile: {
     breakpoint: { max: 464, min: 0 },
     items: 1,
-    partialVisibilityGutter: 50,
+    partialVisibilityGutter: 30,
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
@@ -63,8 +63,8 @@ const responsive = {
 
 const TopSkills = () => {
   return (
-    <>
-      <Typography variant='h5' sx={{ pl: 1, pt: 3, pb: 1, fontWeight: 700 }}>
+    <Box sx={{ py: 3 }}>
+      <Typography variant='h5' sx={{ pl: 1, pb: 1, fontWeight: 700 }}>
         Recommended
       </Typography>
       <Carousel
@@ -73,9 +73,8 @@ const TopSkills = () => {
         focusOnSelect={true}
         arrows={false}
         transitionDuration={0}
-        itemClass={styles.itemClass}
       >
-        <Card>
+        <Card sx={{m:'4px'}}>
           <CardMedia
             component='img'
             height='140'
@@ -108,7 +107,7 @@ const TopSkills = () => {
                     color='text.secondary'
                     sx={{ ml: 1 }}
                   >
-                    4.0(1k+)
+                    (1k+)
                   </Typography>
                 </Stack>
               </Stack>
@@ -132,21 +131,18 @@ const TopSkills = () => {
               </Typography>
             </Stack>
           </CardContent>
+          <Divider />
           <CardActions>
             <IconButton aria-label='delete' size='small'>
               <ShareIcon fontSize='inherit' />
             </IconButton>
             <Box sx={{ flexGrow: 1 }} />
-            <Typography
-              variant='body1'
-              color='text.secondary'
-              // sx={{ fontSize: '0.7rem ' }}
-            >
+            <Typography variant='body1' color='text.secondary' sx={{ px: 1 }}>
               &#8358;1,000
             </Typography>
           </CardActions>
         </Card>
-        <Card>
+        <Card sx={{m:'4px'}}>
           <CardMedia
             component='img'
             height='140'
@@ -217,7 +213,7 @@ const TopSkills = () => {
             </Typography>
           </CardActions>
         </Card>
-        <Card>
+        <Card sx={{m:'4px'}}>
           <CardMedia
             component='img'
             height='140'
@@ -289,8 +285,180 @@ const TopSkills = () => {
           </CardActions>
         </Card>
       </Carousel>
-    </>
+    </Box>
   );
 };
 
 export default TopSkills;
+
+{
+  /* <Box sx={{ overflow: 'hidden' }}>
+  <Box
+    sx={{
+      overflowX: 'scroll',
+      boxSizing: 'content-box',
+      display: '-webkit-box',
+    }}
+  >
+    <Card sx={{ width: 260, m: '5px' }}>
+      <CardMedia
+        component='img'
+        height='140'
+        image='/pic.jpg'
+        alt='green iguana'
+      />
+      <CardContent>
+        <Stack direction='row' alignItems='center' spacing={2} sx={{ mb: 2 }}>
+          <StyledBadge
+            overlap='circular'
+            anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
+            variant='dot'
+          >
+            <Avatar alt='Remy Sharp' src='/pic.jpg' />
+          </StyledBadge>
+          <Stack direction='column'>
+            <Typography variant='body2'>Zhine</Typography>
+            <Typography variant='body2' sx={{ color: 'green' }}>
+              Professional
+            </Typography>
+            <Stack direction='row'>
+              <Rating readOnly size='small' value={4} />
+              <Typography variant='body2' color='text.secondary' sx={{ ml: 1 }}>
+                (1k+)
+              </Typography>
+            </Stack>
+          </Stack>
+        </Stack>
+        <Typography gutterBottom variant='body2'>
+          VIDEO & ANIMATION
+        </Typography>
+        <Typography gutterBottom variant='body2' color='text.secondary'>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, enim.
+        </Typography>
+        <Stack direction='row' spacing={1} alignItems='center' sx={{ mt: 2 }}>
+          <MyLocationIcon fontSize='inherit' />
+          <Typography variant='body2' color='text.secondary'>
+            Ibadan - Ibadan North
+          </Typography>
+        </Stack>
+      </CardContent>
+      <Divider />
+      <CardActions>
+        <IconButton aria-label='delete' size='small'>
+          <ShareIcon fontSize='inherit' />
+        </IconButton>
+        <Box sx={{ flexGrow: 1 }} />
+        <Typography variant='body1' color='text.secondary' sx={{ px: 1 }}>
+          &#8358;1,000
+        </Typography>
+      </CardActions>
+    </Card>
+    <Card sx={{ width: 260, m: '5px' }}>
+      <CardMedia
+        component='img'
+        height='140'
+        image='/pic.jpg'
+        alt='green iguana'
+      />
+      <CardContent>
+        <Stack direction='row' alignItems='center' spacing={2} sx={{ mb: 2 }}>
+          <StyledBadge
+            overlap='circular'
+            anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
+            variant='dot'
+          >
+            <Avatar alt='Remy Sharp' src='/pic.jpg' />
+          </StyledBadge>
+          <Stack direction='column'>
+            <Typography variant='body2'>Zhine</Typography>
+            <Typography variant='body2' sx={{ color: 'green' }}>
+              Professional
+            </Typography>
+            <Stack direction='row'>
+              <Rating readOnly size='small' value={4} />
+              <Typography variant='body2' color='text.secondary' sx={{ ml: 1 }}>
+                (1k+)
+              </Typography>
+            </Stack>
+          </Stack>
+        </Stack>
+        <Typography gutterBottom variant='body2'>
+          VIDEO & ANIMATION
+        </Typography>
+        <Typography gutterBottom variant='body2' color='text.secondary'>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, enim.
+        </Typography>
+        <Stack direction='row' spacing={1} alignItems='center' sx={{ mt: 2 }}>
+          <MyLocationIcon fontSize='inherit' />
+          <Typography variant='body2' color='text.secondary'>
+            Ibadan - Ibadan North
+          </Typography>
+        </Stack>
+      </CardContent>
+      <Divider />
+      <CardActions>
+        <IconButton aria-label='delete' size='small'>
+          <ShareIcon fontSize='inherit' />
+        </IconButton>
+        <Box sx={{ flexGrow: 1 }} />
+        <Typography variant='body1' color='text.secondary' sx={{ px: 1 }}>
+          &#8358;1,000
+        </Typography>
+      </CardActions>
+    </Card>
+    <Card sx={{ width: 260, m: '5px' }}>
+      <CardMedia
+        component='img'
+        height='140'
+        image='/pic.jpg'
+        alt='green iguana'
+      />
+      <CardContent>
+        <Stack direction='row' alignItems='center' spacing={2} sx={{ mb: 2 }}>
+          <StyledBadge
+            overlap='circular'
+            anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
+            variant='dot'
+          >
+            <Avatar alt='Remy Sharp' src='/pic.jpg' />
+          </StyledBadge>
+          <Stack direction='column'>
+            <Typography variant='body2'>Zhine</Typography>
+            <Typography variant='body2' sx={{ color: 'green' }}>
+              Professional
+            </Typography>
+            <Stack direction='row'>
+              <Rating readOnly size='small' value={4} />
+              <Typography variant='body2' color='text.secondary' sx={{ ml: 1 }}>
+                (1k+)
+              </Typography>
+            </Stack>
+          </Stack>
+        </Stack>
+        <Typography gutterBottom variant='body2'>
+          VIDEO & ANIMATION
+        </Typography>
+        <Typography gutterBottom variant='body2' color='text.secondary'>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, enim.
+        </Typography>
+        <Stack direction='row' spacing={1} alignItems='center' sx={{ mt: 2 }}>
+          <MyLocationIcon fontSize='inherit' />
+          <Typography variant='body2' color='text.secondary'>
+            Ibadan - Ibadan North
+          </Typography>
+        </Stack>
+      </CardContent>
+      <Divider />
+      <CardActions>
+        <IconButton aria-label='delete' size='small'>
+          <ShareIcon fontSize='inherit' />
+        </IconButton>
+        <Box sx={{ flexGrow: 1 }} />
+        <Typography variant='body1' color='text.secondary' sx={{ px: 1 }}>
+          &#8358;1,000
+        </Typography>
+      </CardActions>
+    </Card>
+  </Box>
+</Box>; */
+}
