@@ -14,12 +14,13 @@ const Hero = () => {
           maxWidth: 300,
           fontWeight: 800,
           color: 'inherit',
+          py:2
         }}
       >
         Find the perfect freelance service near you.
       </Typography>
       <Search />
-      <Button fullWidth size='small' variant='outlined'>
+      <Button fullWidth size='medium' variant='contained'>
         Search
       </Button>
     </Box>

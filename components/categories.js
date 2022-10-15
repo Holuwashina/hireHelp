@@ -3,8 +3,8 @@ import Image from 'next/image';
 
 const Categories = () => {
   return (
-    <>
-      <Typography variant='h5' sx={{ pl: 1, pt: 3, pb: 1, fontWeight: 700 }}>
+    <Box sx={{py:5}}>
+      <Typography variant='h5' sx={{ pl: 1, fontWeight: 700 }}>
         Explore by Categories
       </Typography>
       <Stack direction='row' justifyContent='center' spacing={2}>
@@ -21,7 +21,7 @@ const Categories = () => {
           </Typography>
         </Box>
       </Stack>
-    </>
+    </Box>
   );
 };
 
