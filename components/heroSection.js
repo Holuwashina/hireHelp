@@ -8,8 +8,8 @@ const Hero = () => {
       <Typography
         gutterBottom
         textAlign='center'
-        component='h5'
-        variant='h5'
+        component='h4'
+        variant='h4'
         sx={{
           maxWidth: 300,
           fontWeight: 800,

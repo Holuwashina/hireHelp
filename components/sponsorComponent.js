@@ -10,7 +10,7 @@ const Sponsor = () => {
         color='text.secondary'
         sx={{
           fontWeight: 800,
-          fontSize: '0.9rem',
+          fontSize: '1.2rem',
           letterSpacing: '.2rem',
         }}
       >
@@ -23,7 +23,7 @@ const Sponsor = () => {
         sx={{
           color: 'gray',
           fontWeight: 800,
-          fontSize: '0.9rem',
+          fontSize: '1.2rem',
           letterSpacing: '.2rem',
         }}
       >
@@ -36,7 +36,7 @@ const Sponsor = () => {
         sx={{
           color: 'gray',
           fontWeight: 800,
-          fontSize: '0.9rem',
+          fontSize: '1.2rem',
           letterSpacing: '.2rem',
         }}
       >

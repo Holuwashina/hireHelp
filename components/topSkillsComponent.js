@@ -63,7 +63,7 @@ const responsive = {
 
 const TopSkills = () => {
   return (
-    <Box sx={{ py: 3 }}>
+    <Box sx={{ py: 5 }}>
       <Typography variant='h5' sx={{ pl: 1, pb: 1, fontWeight: 700 }}>
         Recommended
       </Typography>
@@ -74,7 +74,7 @@ const TopSkills = () => {
         arrows={false}
         transitionDuration={0}
       >
-        <Card sx={{m:'4px'}}>
+        <Card sx={{ m: 1 }}>
           <CardMedia
             component='img'
             height='140'
@@ -107,7 +107,7 @@ const TopSkills = () => {
                     color='text.secondary'
                     sx={{ ml: 1 }}
                   >
-                    (1k+)
+                    4.0(1k+)
                   </Typography>
                 </Stack>
               </Stack>
@@ -142,7 +142,7 @@ const TopSkills = () => {
             </Typography>
           </CardActions>
         </Card>
-        <Card sx={{m:'4px'}}>
+        <Card sx={{ m: 1 }}>
           <CardMedia
             component='img'
             height='140'
@@ -213,7 +213,7 @@ const TopSkills = () => {
             </Typography>
           </CardActions>
         </Card>
-        <Card sx={{m:'4px'}}>
+        <Card sx={{ m: 1 }}>
           <CardMedia
             component='img'
             height='140'
