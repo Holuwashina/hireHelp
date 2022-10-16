@@ -142,7 +142,6 @@ const theme = createTheme({
     htmlFontSize: 16,
     fontFamily: [
       'Inter',
-      'Inter-var',
       'ui-sans-serif',
       'system-ui',
       '-apple-system',
@@ -231,7 +230,7 @@ const theme = createTheme({
   body2: {
     // fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
     fontWeight: 400,
-    fontSize: '0.875rem',
+    fontSize: '0.3rem',
     lineHeight: 1.43,
     letterSpacing: '0.01071em',
   },

@@ -10,8 +10,8 @@ const Home = () => {
   return (
     <>
       <NavBar />
-      <Container>
         <Hero />
+      <Container>
         <Sponsor />
         <TopSkills />
         <Categories />

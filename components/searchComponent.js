@@ -27,6 +27,7 @@ export default function Grouped() {
         <>
           <TextField
             {...params}
+            color='success'
             placeholder='Find service'
             InputProps={{
               ...params.InputProps,

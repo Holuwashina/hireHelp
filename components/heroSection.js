@@ -1,29 +1,43 @@
-import { Button, Typography } from '@mui/material';
+import { Button, Typography, Container } from '@mui/material';
 import { Box } from '@mui/system';
 import Search from './searchComponent';
 
 const Hero = () => {
   return (
-    <Box sx={{ py: 5, textAlign: '-webkit-center' }}>
-      <Typography
-        gutterBottom
-        textAlign='center'
-        component='h4'
-        variant='h4'
-        sx={{
-          maxWidth: 300,
-          fontWeight: 800,
-          color: 'inherit',
-          py:2
-        }}
-      >
-        Find the perfect freelance service near you.
-      </Typography>
-      <Search />
-      <Button fullWidth size='medium' variant='contained'>
-        Search
-      </Button>
-    </Box>
+    <Container
+      fixed
+      style={{
+        backgroundImage: 'url("/bg.jpg")',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}
+    >
+      <Box sx={{ py: 5,mx:'auto' }}>
+        <Typography
+          gutterBottom
+          component='h5'
+          variant='h5'
+          sx={{
+            textTransform:'uppercase',
+            borderRadius:2,
+            fontWeight: 800,
+            color: 'common.white',
+            py: 3,
+          }}
+          // style={{
+          //   backgroundColor: 'rgba(255,255,255,0.05)',
+          //   boxShadow: '0 8px 32px 0 rgba(31,38,135,0.37)',
+          // }}
+        >
+          Find the perfect freelance service near you.
+        </Typography>
+        <Search />
+        <Button fullWidth size='medium' variant='contained'>
+          Search
+        </Button>
+      </Box>
+    </Container>
   );
 };
 
