@@ -76,6 +76,7 @@ const TopSkills = () => {
       </Typography>
       <Carousel
       transitionDuration={1}
+      minimumTouchDrag={1}
         responsive={responsive}
         partialVisible={true}
         focusOnSelect={true}
