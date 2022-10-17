@@ -97,7 +97,6 @@ const TopSkills = () => {
               }}
               style={{
                 backgroundColor: 'rgba(0,0,0,0.7)',
-                boxShadow: '0 8px 32px 0 rgba(31,38,135,0.37)',
                 backdropFilter: 'blur(1px)',
               }}
             >
@@ -198,7 +197,6 @@ const TopSkills = () => {
               }}
               style={{
                 backgroundColor: 'rgba(0,0,0,0.7)',
-                boxShadow: '0 8px 32px 0 rgba(31,38,135,0.37)',
                 backdropFilter: 'blur(1px)',
               }}
             >

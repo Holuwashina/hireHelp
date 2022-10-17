@@ -16,12 +16,13 @@ const Hero = () => {
       <Box sx={{ py: 5,mx:'auto' }}>
         <Typography
           gutterBottom
-          component='h5'
-          variant='h5'
+          component='h4'
+          variant='h4'
           sx={{
-            width:300,
+
             textTransform:'uppercase',
             borderRadius:2,
+            fontSize:'2rem',
             fontWeight: 800,
             color: 'common.white',
             py: 3,
