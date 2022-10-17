@@ -75,12 +75,13 @@ const TopSkills = () => {
         Recommended
       </Typography>
       <Carousel
-      transitionDuration={1}
-      minimumTouchDrag={1}
+        transitionDuration={1}
+        minimumTouchDrag={1}
         responsive={responsive}
         partialVisible={true}
         focusOnSelect={true}
         arrows={false}
+        containerClass='react-multi-carousel'
       >
         <Card sx={{ mx: 1, minWidth: 280 }}>
           <Box sx={{ position: 'relative' }}>
@@ -284,8 +285,10 @@ const TopSkills = () => {
             </IconButton>
           </CardActions>
         </Card>
-        <Card sx={{display:'flex',justifyContent:'center',height:'100%'}}>
-          <Button>See all</Button>
+        <Card
+          sx={{ display: 'flex', justifyContent: 'center', mx: 1, minWidth: 280, height: '100%' }}
+        >
+          <Button fullWidth>See all</Button>
         </Card>
       </Carousel>
     </Box>

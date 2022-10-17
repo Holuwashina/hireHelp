@@ -19,16 +19,14 @@ const Hero = () => {
           component='h5'
           variant='h5'
           sx={{
+            width:300,
             textTransform:'uppercase',
             borderRadius:2,
             fontWeight: 800,
             color: 'common.white',
             py: 3,
           }}
-          // style={{
-          //   backgroundColor: 'rgba(255,255,255,0.05)',
-          //   boxShadow: '0 8px 32px 0 rgba(31,38,135,0.37)',
-          // }}
+        
         >
           Find the perfect freelance service near you.
         </Typography>

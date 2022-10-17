@@ -14,7 +14,7 @@ const Home = () => {
       <Container>
         <Sponsor />
         <TopSkills />
-        <Categories />
+        {/* <Categories /> */}
         <br />
         <br />
         <br />
