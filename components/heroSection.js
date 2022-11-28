@@ -21,7 +21,7 @@ const Hero = () => {
           sx={{
             textTransform: "uppercase",
             borderRadius: 2,
-            fontWeight: 800,
+            fontWeight: 900,
             py: 3,
           }}
         >

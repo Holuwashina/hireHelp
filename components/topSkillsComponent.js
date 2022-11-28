@@ -26,8 +26,8 @@ import Image from "next/image";
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
   "& .MuiBadge-badge": {
-    backgroundColor: "#44b700",
-    color: "#44b700",
+    backgroundColor: "#44b900",
+    color: "#44b900",
     boxShadow: `0 0 0 2px ${theme.palette.background.paper}`,
     "&::after": {
       position: "absolute",
@@ -73,7 +73,7 @@ const TopSkills = () => {
     <Box sx={{ py: 3 }}>
       <Typography
         variant="h6"
-        sx={{ pl: 1, pb: 1, fontWeight: 700, textTransform: "uppercase" }}
+        sx={{ pl: 1, pb: 1, fontWeight: 900, textTransform: "uppercase" }}
       >
         Recommended
       </Typography>

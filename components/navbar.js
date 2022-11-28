@@ -95,7 +95,9 @@ const NavBar = () => {
           </Box>
           <Box sx={{ flexGrow: 1, display: "flex" }}>
             {/* <Image width={130} height={40} src='/Black11.gif' /> */}
-            <Typography>HIRE HELP</Typography>
+            <Typography component="h6" variant="h6">
+              HIRE HELP
+            </Typography>
           </Box>
 
           {/* <Typography

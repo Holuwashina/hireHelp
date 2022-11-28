@@ -31,7 +31,7 @@ const Sponsor = () => {
             component="h6"
             variant="h6"
             align="center"
-            sx={{fontFamily:"fantasy",  color: "gray", fontSize:"1rem", fontWeight: 400,  }}
+            sx={{fontFamily:"fantasy",  color: "gray", fontSize:"1rem", fontWeight: 800,  }}
           >
             GOOGLE
           </Typography>
@@ -39,7 +39,7 @@ const Sponsor = () => {
             component="h6"
             variant="h6"
             align="center"
-            sx={{fontFamily:"fantasy",  color: "gray", fontSize:"1rem", fontWeight: 400,  }}
+            sx={{fontFamily:"fantasy",  color: "gray", fontSize:"1rem", fontWeight: 800,  }}
           >
             PEPSI
           </Typography>
@@ -47,7 +47,7 @@ const Sponsor = () => {
             component="h6"
             variant="h6"
             align="center"
-            sx={{fontFamily:"fantasy",  color: "gray", fontSize:"1rem", fontWeight: 400,  }}
+            sx={{fontFamily:"fantasy",  color: "gray", fontSize:"1rem", fontWeight: 800,  }}
           >
             TECNO
           </Typography>
@@ -55,7 +55,7 @@ const Sponsor = () => {
             component="h6"
             variant="h6"
             align="center"
-            sx={{fontFamily:"fantasy",  color: "gray", fontSize:"1rem", fontWeight: 400,  }}
+            sx={{fontFamily:"fantasy",  color: "gray", fontSize:"1rem", fontWeight: 800,  }}
           >
             EMIRATE
           </Typography>
@@ -63,7 +63,7 @@ const Sponsor = () => {
             component="h6"
             variant="h6"
             align="center"
-            sx={{fontFamily:"fantasy",  color: "gray", fontSize:"1rem", fontWeight: 400,  }}
+            sx={{fontFamily:"fantasy",  color: "gray", fontSize:"1rem", fontWeight: 800,  }}
           >
             NESTLE
           </Typography>
@@ -84,10 +84,9 @@ const Sponsor = () => {
               variant="h6"
               align="center"
               sx={{
-                fontFamily: "fantasy",
                 color: "gray",
                 fontSize: "1rem",
-                fontWeight: 400,
+                fontWeight: 800,
               }}
             >
               GOOGLE
@@ -99,10 +98,9 @@ const Sponsor = () => {
               variant="h6"
               align="center"
               sx={{
-                fontFamily: "fantasy",
                 color: "gray",
                 fontSize: "1rem",
-                fontWeight: 400,
+                fontWeight: 800,
               }}
             >
               PEPSI
@@ -114,10 +112,9 @@ const Sponsor = () => {
               variant="h6"
               align="center"
               sx={{
-                fontFamily: "fantasy",
                 color: "gray",
                 fontSize: "1rem",
-                fontWeight: 400,
+                fontWeight: 800,
               }}
             >
               TECNO
@@ -129,10 +126,9 @@ const Sponsor = () => {
               variant="h6"
               align="center"
               sx={{
-                fontFamily: "fantasy",
                 color: "gray",
                 fontSize: "1rem",
-                fontWeight: 400,
+                fontWeight: 800,
               }}
             >
               EMIRATE
@@ -143,7 +139,7 @@ const Sponsor = () => {
               component="h6"
               variant="h6"
               align="center"
-              sx={{ fontFamily:"fantasy", color: "gray", fontSize: "1rem", fontWeight: 400,  }}
+              sx={{ fontFamily:"fantasy", color: "gray", fontSize: "1rem", fontWeight: 800,  }}
             >
               NESTLE
             </Typography>
@@ -153,7 +149,7 @@ const Sponsor = () => {
               component="h6"
               variant="h6"
               align="center"
-              sx={{ fontFamily:"fantasy", color: "gray", fontSize: "1rem", fontWeight: 400,  }}
+              sx={{ fontFamily:"fantasy", color: "gray", fontSize: "1rem", fontWeight: 800,  }}
             >
               NESTLE
             </Typography>
