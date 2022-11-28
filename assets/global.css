@@ -1,3 +1,13 @@
+
+@font-face {
+  font-family: 'sporty';
+  src: url('sporty.woff2') format('woff2'),
+    url('sporty.woff') format('woff'),
+    url('sporty.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .react-multi-carousel {
   padding: 10px 0;
 }

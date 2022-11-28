@@ -1,10 +1,10 @@
-import { Box, Divider, Container } from '@mui/material';
-import Image from 'next/image';
-import Carousel from 'react-multi-carousel';
+import { Grid, Divider, Container, Typography } from "@mui/material";
+import Image from "next/image";
+import Carousel from "react-multi-carousel";
 
 const responsive = {
   mobile: {
-    breakpoint: { max: 464, min: 0 },
+    breakpoint: { max: 363, min: 0 },
     items: 3,
   },
 };
@@ -12,19 +12,62 @@ const responsive = {
 const Sponsor = () => {
   return (
     <>
-      <Divider color='text.secondary' textAlign='left' sx={{ my: 2 }}>
+      <Divider
+        textAlign="left"
+        sx={{ color: "gray", fontSize: "0.7rem", my: 2 }}
+      >
         Trusted by
       </Divider>
       <Container>
-        <Carousel
+        {/* <Carousel
           responsive={responsive}
           focusOnSelect={true}
           arrows={false}
           autoPlay={true}
-          autoPlaySpeed={10000}
+          autoPlaySpeed={20000}
           infinite={true}
         >
-          <Image width={150} height={60} src='/Oraimo.png' />
+          <Typography
+            component="h6"
+            variant="h6"
+            align="center"
+            sx={{fontFamily:"fantasy",  color: "gray", fontSize:"1rem", fontWeight: 400,  }}
+          >
+            GOOGLE
+          </Typography>
+          <Typography
+            component="h6"
+            variant="h6"
+            align="center"
+            sx={{fontFamily:"fantasy",  color: "gray", fontSize:"1rem", fontWeight: 400,  }}
+          >
+            PEPSI
+          </Typography>
+          <Typography
+            component="h6"
+            variant="h6"
+            align="center"
+            sx={{fontFamily:"fantasy",  color: "gray", fontSize:"1rem", fontWeight: 400,  }}
+          >
+            TECNO
+          </Typography>
+          <Typography
+            component="h6"
+            variant="h6"
+            align="center"
+            sx={{fontFamily:"fantasy",  color: "gray", fontSize:"1rem", fontWeight: 400,  }}
+          >
+            EMIRATE
+          </Typography>
+          <Typography
+            component="h6"
+            variant="h6"
+            align="center"
+            sx={{fontFamily:"fantasy",  color: "gray", fontSize:"1rem", fontWeight: 400,  }}
+          >
+            NESTLE
+          </Typography>
+           <Image width={150} height={60} src='/Oraimo.png' />
 
           <Image width={150} height={60} src='/Jumia.png' />
 
@@ -33,7 +76,89 @@ const Sponsor = () => {
           <Image width={150} height={60} src='/Pepsi.png' />
 
           <Image width={150} height={60} src='/Infinix.png' />
-        </Carousel>
+        </Carousel> */}
+        <Grid container justifyContent="center">
+          <Grid item xs={3}>
+            <Typography
+              component="h6"
+              variant="h6"
+              align="center"
+              sx={{
+                fontFamily: "fantasy",
+                color: "gray",
+                fontSize: "1rem",
+                fontWeight: 400,
+              }}
+            >
+              GOOGLE
+            </Typography>
+          </Grid>
+          <Grid item xs={3}>
+            <Typography
+              component="h6"
+              variant="h6"
+              align="center"
+              sx={{
+                fontFamily: "fantasy",
+                color: "gray",
+                fontSize: "1rem",
+                fontWeight: 400,
+              }}
+            >
+              PEPSI
+            </Typography>
+          </Grid>
+          <Grid item xs={3}>
+            <Typography
+              component="h6"
+              variant="h6"
+              align="center"
+              sx={{
+                fontFamily: "fantasy",
+                color: "gray",
+                fontSize: "1rem",
+                fontWeight: 400,
+              }}
+            >
+              TECNO
+            </Typography>
+          </Grid>
+          <Grid item xs={3}>
+            <Typography
+              component="h6"
+              variant="h6"
+              align="center"
+              sx={{
+                fontFamily: "fantasy",
+                color: "gray",
+                fontSize: "1rem",
+                fontWeight: 400,
+              }}
+            >
+              EMIRATE
+            </Typography>
+          </Grid>
+          {/* <Grid item xs={3}>
+            <Typography
+              component="h6"
+              variant="h6"
+              align="center"
+              sx={{ fontFamily:"fantasy", color: "gray", fontSize: "1rem", fontWeight: 400,  }}
+            >
+              NESTLE
+            </Typography>
+          </Grid>
+          <Grid item xs={3}>
+            <Typography
+              component="h6"
+              variant="h6"
+              align="center"
+              sx={{ fontFamily:"fantasy", color: "gray", fontSize: "1rem", fontWeight: 400,  }}
+            >
+              NESTLE
+            </Typography>
+          </Grid> */}
+        </Grid>
       </Container>
     </>
   );
