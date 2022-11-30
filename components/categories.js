@@ -4,7 +4,7 @@ import Image from "next/image";
 const Categories = () => {
   return (
     <Box sx={{ py: 3 }}>
-      <Typography variant="h6" sx={{ pl: 1, fontWeight: 700, textTransform:'uppercase' }}>
+      <Typography variant="h6" sx={{ pl: 1, fontWeight: 900, textTransform:'uppercase' }}>
         Explore by Categories
       </Typography>
       <Stack direction="row" justifyContent="center" spacing={2} sx={{ py: 3 }}>

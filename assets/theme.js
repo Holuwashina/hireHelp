@@ -12,7 +12,15 @@ const theme = createTheme({
     },
   },
   direction: "ltr",
-  Components: {},
+  components: {
+    MuiImageList: {
+      stylesOverrides: {
+        root: {
+          display: "flex",
+        },
+      },
+    },
+  },
   mixins: {
     toolbar: {
       minHeight: 56,

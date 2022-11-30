@@ -68,7 +68,7 @@ const responsive = {
   },
 };
 
-const TopSkills = () => {
+const RecommendedSkills = () => {
   return (
     <Box sx={{ py: 3 }}>
       <Typography
@@ -305,4 +305,4 @@ const TopSkills = () => {
   );
 };
 
-export default TopSkills;
+export default RecommendedSkills;

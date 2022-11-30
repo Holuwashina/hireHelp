@@ -4,8 +4,8 @@ import Categories from "../components/categories";
 import Hero from "../components/heroSection";
 import NavBar from "../components/navbar";
 import Sponsor from "../components/sponsorComponent";
-import TopSkills from "../components/topSkillsComponent";
-import ProfessionalSkills from "../components/professionalSkills";
+import RecommendedSkills from "../components/recommendedSkills";
+import TrendingSkills from "../components/trendingSkills";
 
 const Home = () => {
   return (
@@ -14,9 +14,9 @@ const Home = () => {
       <Hero />
       <Container>
         <Sponsor />
-        <TopSkills />
+        <TrendingSkills />
         <Categories />
-        <ProfessionalSkills />
+        <RecommendedSkills />
         <br />
         <br />
         <br />
