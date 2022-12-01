@@ -20,6 +20,8 @@ import { styled } from "@mui/material/styles";
 import ShareIcon from "@mui/icons-material/Share";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import { BiSad } from "react-icons/bi";
+import { BiHappy } from "react-icons/bi";
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
   "& .MuiBadge-badge": {
@@ -83,17 +85,54 @@ const TrendingSkills = () => {
                   overlap="circular"
                   anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
                   variant="dot"
+                  sx={{ alignSelf: "start" }}
                 >
                   <Avatar alt="Remy Sharp" src="/avatar.jpg" />
                 </StyledBadge>
-                <Stack>
-                  <Typography>Zhine</Typography>
+                <Stack sx={{ flexGrow: 1 }}>
+                  <Stack direction="row">
+                    <Typography>Zhine</Typography>
+                    <Box sx={{ flexGrow: 1 }}></Box>
+                    <Typography sx={{ fontSize: "0.8rem" }}>Expert</Typography>
+                  </Stack>
                   <Typography sx={{ fontSize: "0.6rem", fontStyle: "italic" }}>
                     Seen 6mins ago
                   </Typography>
+                  <Stack direction="row" sx={{ mt: 1 }}>
+                    <Box
+                      sx={{
+                        display: "flex",
+                        placeItems: "center",
+                        mr: 2,
+                        color: "green",
+                      }}
+                    >
+                      <BiHappy />
+                      <Typography
+                        component="span"
+                        sx={{ fontSize: "0.8rem", ml: "3px" }}
+                      >
+                        1
+                      </Typography>
+                    </Box>
+                    <Box
+                      sx={{
+                        display: "flex",
+                        placeItems: "center",
+                        mr: 2,
+                        color: "red",
+                      }}
+                    >
+                      <BiSad />
+                      <Typography
+                        component="span"
+                        sx={{ fontSize: "0.8rem", ml: "3px" }}
+                      >
+                        0
+                      </Typography>
+                    </Box>
+                  </Stack>
                 </Stack>
-                <Box sx={{ flexGrow: 1 }}></Box>
-                <Typography sx={{ fontSize: "0.8rem" }}>Expert</Typography>
               </Stack>
             </CardContent>
           </CardActionArea>
@@ -131,65 +170,54 @@ const TrendingSkills = () => {
                   overlap="circular"
                   anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
                   variant="dot"
+                  sx={{ alignSelf: "start" }}
                 >
                   <Avatar alt="Remy Sharp" src="/avatar.jpg" />
                 </StyledBadge>
-                <Stack>
-                  <Typography>Zhine</Typography>
+                <Stack sx={{ flexGrow: 1 }}>
+                  <Stack direction="row">
+                    <Typography>Zhine</Typography>
+                    <Box sx={{ flexGrow: 1 }}></Box>
+                    <Typography sx={{ fontSize: "0.8rem" }}>Expert</Typography>
+                  </Stack>
                   <Typography sx={{ fontSize: "0.6rem", fontStyle: "italic" }}>
                     Seen 6mins ago
                   </Typography>
+                  <Stack direction="row" sx={{ mt: 1 }}>
+                    <Box
+                      sx={{
+                        display: "flex",
+                        placeItems: "center",
+                        mr: 2,
+                        color: "green",
+                      }}
+                    >
+                      <BiHappy />
+                      <Typography
+                        component="span"
+                        sx={{ fontSize: "0.8rem", ml: "3px" }}
+                      >
+                        1
+                      </Typography>
+                    </Box>
+                    <Box
+                      sx={{
+                        display: "flex",
+                        placeItems: "center",
+                        mr: 2,
+                        color: "red",
+                      }}
+                    >
+                      <BiSad />
+                      <Typography
+                        component="span"
+                        sx={{ fontSize: "0.8rem", ml: "3px" }}
+                      >
+                        0
+                      </Typography>
+                    </Box>
+                  </Stack>
                 </Stack>
-                <Box sx={{ flexGrow: 1 }}></Box>
-                <Typography sx={{ fontSize: "0.8rem" }}>Expert</Typography>
-              </Stack>
-            </CardContent>
-          </CardActionArea>
-          <Divider />
-          <CardActions>
-            <Checkbox
-              {...label}
-              size="small"
-              icon={<FavoriteBorderIcon />}
-              checkedIcon={<FavoriteIcon style={{ color: "#ff6d75" }} />}
-            />
-            <IconButton aria-label="delete" size="small">
-              <ShareIcon fontSize="inherit" />
-            </IconButton>
-          </CardActions>
-        </Card>
-        <Card sx={{ mx: 1, minWidth: 200 }}>
-          <CardActionArea>
-            <CardContent>
-              <Stack direction="row" justifyContent="space-between">
-                <Stack>
-                  <Typography>Hire a</Typography>
-                  <Typography>Photographer</Typography>
-                </Stack>
-                <Typography sx={{ fontSize: "0.7rem" }}>
-                  &#8358;1,000
-                </Typography>
-              </Stack>
-              <Typography sx={{ fontSize: "0.8rem" }}>
-                Ibadan - central
-              </Typography>
-              <Divider />
-              <Stack direction="row" spacing={1} sx={{ pt: 1 }}>
-                <StyledBadge
-                  overlap="circular"
-                  anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
-                  variant="dot"
-                >
-                  <Avatar alt="Remy Sharp" src="/avatar.jpg" />
-                </StyledBadge>
-                <Stack>
-                  <Typography>Zhine</Typography>
-                  <Typography sx={{ fontSize: "0.6rem", fontStyle: "italic" }}>
-                    Seen 6mins ago
-                  </Typography>
-                </Stack>
-                <Box sx={{ flexGrow: 1 }}></Box>
-                <Typography sx={{ fontSize: "0.8rem" }}>Expert</Typography>
               </Stack>
             </CardContent>
           </CardActionArea>

@@ -13,6 +13,7 @@ import {
   IconButton,
   Divider,
   Checkbox,
+  CardActionArea,
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import Carousel from "react-multi-carousel";
@@ -23,6 +24,8 @@ import MyLocationIcon from "@mui/icons-material/MyLocation";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import Image from "next/image";
+import { BiSad } from "react-icons/bi";
+import { BiHappy } from "react-icons/bi";
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
   "& .MuiBadge-badge": {
@@ -79,7 +82,7 @@ const RecommendedSkills = () => {
       </Typography>
       <Stack
         direction="row"
-        spacing={3}
+        spacing={2}
         sx={{ overflowY: "scroll", py: 2 }}
         // transitionDuration={1}
         // minimumTouchDrag={1}
@@ -89,93 +92,128 @@ const RecommendedSkills = () => {
         // arrows={false}
         // containerClass="react-multi-carousel"
       >
-        <Card sx={{ mx: 1, minWidth: 280 }}>
-          <Box sx={{ position: "relative" }}>
-            <Typography
-              variant="body2"
-              color="blue"
-              sx={{
-                position: "absolute",
-                right: 0,
-                bottom: 0,
-                px: 1,
-                color: "common.white",
-              }}
-              style={{
-                backgroundColor: "rgba(0,0,0,0.7)",
-                backdropFilter: "blur(1px)",
-              }}
-            >
-              Starting from
-              <span style={{ marginLeft: "5px", fontSize: "1rem" }}>
-                &#8358;1,000
-              </span>
-            </Typography>
-            <CardMedia
-              component="img"
-              height="150"
-              image="/pic.jpg"
-              alt="green iguana"
-            />
-          </Box>
-          <CardContent>
-            <Stack
-              direction="row"
-              alignItems="center"
-              spacing={2}
-              sx={{ mb: 2 }}
-            >
-              <StyledBadge
-                overlap="circular"
-                anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
-                variant="dot"
+        <Card sx={{ mx: 1, minWidth: 250 }}>
+          <CardActionArea>
+            <Box sx={{ position: "relative" }}>
+              <Typography
+                variant="body2"
+                color="blue"
+                sx={{
+                  position: "absolute",
+                  right: 0,
+                  bottom: 0,
+                  px: 1,
+                  color: "common.white",
+                }}
+                style={{
+                  backgroundColor: "rgba(0,0,0,0.7)",
+                  backdropFilter: "blur(1px)",
+                }}
               >
-                <Avatar alt="Remy Sharp" src="/avatar.jpg" />
-              </StyledBadge>
-              <Stack direction="column">
-                <Typography variant="body2">
-                  Zhine{" "}
-                  <img
-                    sx={{ width: 10, height: 10 }}
-                    alt="Badge"
-                    src="/check1.png"
-                  />
-                </Typography>
+                Starting from
+                <span style={{ marginLeft: "5px", fontSize: "1rem" }}>
+                  &#8358;1,000
+                </span>
+              </Typography>
+              <CardMedia
+                component="img"
+                height="140"
+                image="/pic.jpg"
+                alt="green iguana"
+              />
+            </Box>
+            <CardContent>
+              <Stack
+                direction="row"
+                alignItems="center"
+                spacing={2}
+                sx={{ mb: 2 }}
+              >
+                <StyledBadge
+                  overlap="circular"
+                  anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
+                  variant="dot"
+                >
+                  <Avatar alt="Remy Sharp" src="/avatar.jpg" />
+                </StyledBadge>
+                <Stack direction="column" sx={{ flexGrow: 1 }}>
+                  <Typography variant="body2">
+                    Zhine
+                    <img
+                      sx={{ width: 10, height: 10 }}
+                      alt="Badge"
+                      src="/check1.png"
+                    />
+                  </Typography>
 
-                <Typography variant="body2" sx={{ color: "green" }}>
-                  Professional
-                </Typography>
-                <Stack direction="row">
-                  <Rating readOnly size="small" value={4} />
+                  <Typography variant="body2" sx={{ color: "green" }}>
+                    Professional
+                  </Typography>
+                  <Stack direction="row" sx={{ mt: 1 }}>
+                    {/* <Rating readOnly size="small" value={4} />
                   <Typography
                     variant="body2"
                     color="text.secondary"
                     sx={{ ml: 1 }}
                   >
                     4.0(41.5k)
-                  </Typography>
+                  </Typography> */}
+
+                    <Box
+                      sx={{
+                        display: "flex",
+                        placeItems: "center",
+                        mr: 2,
+                        color: "green",
+                      }}
+                    >
+                      <BiHappy />
+                      <Typography
+                        component="span"
+                        sx={{ fontSize: "0.8rem", ml: "3px" }}
+                      >
+                        1
+                      </Typography>
+                    </Box>
+                    <Box
+                      sx={{
+                        display: "flex",
+                        placeItems: "center",
+                        mr: 2,
+                        color: "red",
+                      }}
+                    >
+                      <BiSad />
+                      <Typography
+                        component="span"
+                        sx={{ fontSize: "0.8rem", ml: "3px" }}
+                      >
+                        0
+                      </Typography>
+                    </Box>
+                  </Stack>
                 </Stack>
               </Stack>
-            </Stack>
-            <Typography gutterBottom variant="body2">
-              VIDEO & ANIMATION
-            </Typography>
-            <Typography gutterBottom variant="body2" color="text.secondary">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae,
-              enim.
-            </Typography>
-            <Stack
-              direction="row"
-              spacing={1}
-              alignItems="center"
-              sx={{ mt: 2 }}
-            >
-              <MyLocationIcon fontSize="inherit" />
-              <Typography variant="body2" color="text.secondary">
-                Ibadan - Ibadan North
+              <Typography gutterBottom variant="body2">
+                VIDEO & ANIMATION
               </Typography>
-            </Stack>
-          </CardContent>
+              <Typography gutterBottom variant="body2" color="text.secondary">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae,
+                enim.
+              </Typography>
+              <Stack
+                direction="row"
+                spacing={1}
+                alignItems="center"
+                sx={{ mt: 2 }}
+              >
+                <MyLocationIcon fontSize="inherit" />
+                <Typography variant="body2" color="text.secondary">
+                  Ibadan - Ibadan North
+                </Typography>
+              </Stack>
+            </CardContent>
+          </CardActionArea>
           <Divider />
           <CardActions>
             <Checkbox
@@ -189,93 +227,128 @@ const RecommendedSkills = () => {
             </IconButton>
           </CardActions>
         </Card>
-        <Card sx={{ mx: 1, minWidth: 280 }}>
-          <Box sx={{ position: "relative" }}>
-            <Typography
-              variant="body2"
-              color="blue"
-              sx={{
-                position: "absolute",
-                right: 0,
-                bottom: 0,
-                px: 1,
-                color: "common.white",
-              }}
-              style={{
-                backgroundColor: "rgba(0,0,0,0.7)",
-                backdropFilter: "blur(1px)",
-              }}
-            >
-              Starting from
-              <span style={{ marginLeft: "5px", fontSize: "1rem" }}>
-                &#8358;1,000
-              </span>
-            </Typography>
-            <CardMedia
-              component="img"
-              height="150"
-              image="/pic.jpg"
-              alt="green iguana"
-            />
-          </Box>
-          <CardContent>
-            <Stack
-              direction="row"
-              alignItems="center"
-              spacing={2}
-              sx={{ mb: 2 }}
-            >
-              <StyledBadge
-                overlap="circular"
-                anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
-                variant="dot"
+        <Card sx={{ mx: 1, minWidth: 250 }}>
+          <CardActionArea>
+            <Box sx={{ position: "relative" }}>
+              <Typography
+                variant="body2"
+                color="blue"
+                sx={{
+                  position: "absolute",
+                  right: 0,
+                  bottom: 0,
+                  px: 1,
+                  color: "common.white",
+                }}
+                style={{
+                  backgroundColor: "rgba(0,0,0,0.7)",
+                  backdropFilter: "blur(1px)",
+                }}
               >
-                <Avatar alt="Remy Sharp" src="/avatar.jpg" />
-              </StyledBadge>
-              <Stack direction="column">
-                <Typography variant="body2">
-                  Zhine{" "}
-                  <img
-                    sx={{ width: 10, height: 10 }}
-                    alt="Badge"
-                    src="/check1.png"
-                  />
-                </Typography>
+                Starting from
+                <span style={{ marginLeft: "5px", fontSize: "1rem" }}>
+                  &#8358;1,000
+                </span>
+              </Typography>
+              <CardMedia
+                component="img"
+                height="140"
+                image="/pic.jpg"
+                alt="green iguana"
+              />
+            </Box>
+            <CardContent>
+              <Stack
+                direction="row"
+                alignItems="center"
+                spacing={2}
+                sx={{ mb: 2 }}
+              >
+                <StyledBadge
+                  overlap="circular"
+                  anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
+                  variant="dot"
+                >
+                  <Avatar alt="Remy Sharp" src="/avatar.jpg" />
+                </StyledBadge>
+                <Stack direction="column" sx={{ flexGrow: 1 }}>
+                  <Typography variant="body2">
+                    Zhine
+                    <img
+                      sx={{ width: 10, height: 10 }}
+                      alt="Badge"
+                      src="/check1.png"
+                    />
+                  </Typography>
 
-                <Typography variant="body2" sx={{ color: "green" }}>
-                  Professional
-                </Typography>
-                <Stack direction="row">
-                  <Rating readOnly size="small" value={4} />
+                  <Typography variant="body2" sx={{ color: "green" }}>
+                    Professional
+                  </Typography>
+                  <Stack direction="row" sx={{ mt: 1 }}>
+                    {/* <Rating readOnly size="small" value={4} />
                   <Typography
                     variant="body2"
                     color="text.secondary"
                     sx={{ ml: 1 }}
                   >
                     4.0(41.5k)
-                  </Typography>
+                  </Typography> */}
+
+                    <Box
+                      sx={{
+                        display: "flex",
+                        placeItems: "center",
+                        mr: 2,
+                        color: "green",
+                      }}
+                    >
+                      <BiHappy />
+                      <Typography
+                        component="span"
+                        sx={{ fontSize: "0.8rem", ml: "3px" }}
+                      >
+                        1
+                      </Typography>
+                    </Box>
+                    <Box
+                      sx={{
+                        display: "flex",
+                        placeItems: "center",
+                        mr: 2,
+                        color: "red",
+                      }}
+                    >
+                      <BiSad />
+                      <Typography
+                        component="span"
+                        sx={{ fontSize: "0.8rem", ml: "3px" }}
+                      >
+                        0
+                      </Typography>
+                    </Box>
+                  </Stack>
                 </Stack>
               </Stack>
-            </Stack>
-            <Typography gutterBottom variant="body2">
-              VIDEO & ANIMATION
-            </Typography>
-            <Typography gutterBottom variant="body2" color="text.secondary">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae,
-              enim.
-            </Typography>
-            <Stack
-              direction="row"
-              spacing={1}
-              alignItems="center"
-              sx={{ mt: 2 }}
-            >
-              <MyLocationIcon fontSize="inherit" />
-              <Typography variant="body2" color="text.secondary">
-                Ibadan - Ibadan North
+              <Typography gutterBottom variant="body2">
+                VIDEO & ANIMATION
               </Typography>
-            </Stack>
-          </CardContent>
+              <Typography gutterBottom variant="body2" color="text.secondary">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae,
+                enim.
+              </Typography>
+              <Stack
+                direction="row"
+                spacing={1}
+                alignItems="center"
+                sx={{ mt: 2 }}
+              >
+                <MyLocationIcon fontSize="inherit" />
+                <Typography variant="body2" color="text.secondary">
+                  Ibadan - Ibadan North
+                </Typography>
+              </Stack>
+            </CardContent>
+          </CardActionArea>
           <Divider />
           <CardActions>
             <Checkbox
