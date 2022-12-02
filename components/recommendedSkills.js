@@ -137,15 +137,18 @@ const RecommendedSkills = () => {
                   <Avatar alt="Remy Sharp" src="/avatar.jpg" />
                 </StyledBadge>
                 <Stack direction="column" sx={{ flexGrow: 1 }}>
-                  <Typography variant="body2">
-                    Zhine
+                  <Stack direction="row">
+                    <Typography variant="body2" sx={{ mr: "3px" }}>
+                      Zhine
+                    </Typography>
                     <img
-                      sx={{ width: 10, height: 10 }}
+                      style={{ placeSelf: "center" }}
+                      width={14}
+                      height={14}
                       alt="Badge"
                       src="/check1.png"
                     />
-                  </Typography>
-
+                  </Stack>
                   <Typography variant="body2" sx={{ color: "green" }}>
                     Professional
                   </Typography>
@@ -272,15 +275,18 @@ const RecommendedSkills = () => {
                   <Avatar alt="Remy Sharp" src="/avatar.jpg" />
                 </StyledBadge>
                 <Stack direction="column" sx={{ flexGrow: 1 }}>
-                  <Typography variant="body2">
-                    Zhine
+                  <Stack direction="row">
+                    <Typography variant="body2" sx={{ mr: "3px" }}>
+                      Zhine
+                    </Typography>
                     <img
-                      sx={{ width: 10, height: 10 }}
+                      style={{ placeSelf: "center" }}
+                      width={14}
+                      height={14}
                       alt="Badge"
                       src="/check1.png"
                     />
-                  </Typography>
-
+                  </Stack>
                   <Typography variant="body2" sx={{ color: "green" }}>
                     Professional
                   </Typography>
