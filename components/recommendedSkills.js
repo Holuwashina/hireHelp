@@ -152,6 +152,9 @@ const RecommendedSkills = () => {
                   <Typography variant="body2" sx={{ color: "green" }}>
                     Professional
                   </Typography>
+                  <Typography sx={{ fontSize: "0.6rem", fontStyle: "italic" }}>
+                    online
+                  </Typography>
                   <Stack direction="row" sx={{ mt: 1 }}>
                     {/* <Rating readOnly size="small" value={4} />
                   <Typography
@@ -289,6 +292,9 @@ const RecommendedSkills = () => {
                   </Stack>
                   <Typography variant="body2" sx={{ color: "green" }}>
                     Professional
+                  </Typography>
+                  <Typography sx={{ fontSize: "0.6rem", fontStyle: "italic" }}>
+                    online
                   </Typography>
                   <Stack direction="row" sx={{ mt: 1 }}>
                     {/* <Rating readOnly size="small" value={4} />

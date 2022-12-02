@@ -6,6 +6,7 @@ import NavBar from "../components/navbar";
 import Sponsor from "../components/sponsorComponent";
 import RecommendedSkills from "../components/recommendedSkills";
 import TrendingSkills from "../components/trendingSkills";
+import BottomAppBar from "../components/bottomNavbar";
 
 const Home = () => {
   return (
@@ -23,12 +24,8 @@ const Home = () => {
         <br />
         <br />
         <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
       </Container>
+      <BottomAppBar />
     </>
   );
 };
