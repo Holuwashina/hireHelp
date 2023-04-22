@@ -25,7 +25,7 @@ const Home = () => {
         <br />
         <br />
       </Container>
-      <BottomAppBar />
+//       <BottomAppBar />
     </>
   );
 };
